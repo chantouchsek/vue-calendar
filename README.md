@@ -3,7 +3,7 @@
 > This is Vue component wrapping [TOAST UI Calendar](https://github.com/nhn/tui.calendar).
 
 [![vue2](https://img.shields.io/badge/vue-2.x-brightgreen.svg)](https://vuejs.org/)
-[![github version](https://img.shields.io/github/release/chantouchsek/@chantouchsek/vue-calendar.svg)](https://github.com/chantouchsek/vue-tuicalendar/releases/latest)
+[![github version](https://img.shields.io/github/release/chantouchsek/vue-tuicalendar.svg)](https://github.com/chantouchsek/vue-tuicalendar/releases/latest)
 [![npm version](https://img.shields.io/npm/v/@chantouchsek/vue-calendar.svg)](https://www.npmjs.com/package/@chantouchsek/vue-calendar)
 [![license](https://img.shields.io/github/license/chantouchsek/vue-tuicalendar.svg)](https://github.com/chantouchsek/vue-tuicalendar/blob/main/LICENSE)
 [![PRs welcome](https://img.shields.io/badge/PRs-welcome-ff69b4.svg)](https://github.com/chantouchsek/vue-tuicalendar/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22)
