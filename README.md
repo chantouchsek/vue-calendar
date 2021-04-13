@@ -3,9 +3,9 @@
 > This is Vue component wrapping [TOAST UI Calendar](https://github.com/nhn/tui.calendar).
 
 [![vue2](https://img.shields.io/badge/vue-2.x-brightgreen.svg)](https://vuejs.org/)
-[![github version](https://img.shields.io/github/release/chantouchsek/vue-tuicalendar.svg)](https://github.com/chantouchsek/vue-tuicalendar/releases/latest)
-[![npm version](https://img.shields.io/npm/v/vue-tuicalendar.svg)](https://www.npmjs.com/package/vue-tuicalendar)
-[![license](https://img.shields.io/github/license/chantouchsek/vue-tuicalendar.svg)](https://github.com/chantouchsek/vue-tuicalendar/blob/main/LICENSE)
+[![github version](https://img.shields.io/github/release/chantouchsek/@chantouchsek/vue-calendar.svg)](https://github.com/chantouchsek/vue-tuicalendar/releases/latest)
+[![npm version](https://img.shields.io/npm/v/@chantouchsek/vue-calendar.svg)](https://www.npmjs.com/package/@chantouchsek/vue-calendar)
+[![license](https://img.shields.io/github/license/chantouchsek/@chantouchsek/vue-calendar.svg)](https://github.com/chantouchsek/vue-tuicalendar/blob/main/LICENSE)
 [![PRs welcome](https://img.shields.io/badge/PRs-welcome-ff69b4.svg)](https://github.com/chantouchsek/vue-tuicalendar/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22)
 
 ## 🚩 Table of Contents
@@ -26,13 +26,13 @@
 ### Using npm
 
 ```sh
-npm install --save vue-tuicalendar
+npm install --save @chantouchsek/vue-calendar
 ```
 
 ### Using yarn
 
 ```sh
-yarn add vue-tuicalendar
+yarn add @chantouchsek/vue-calendar
 ```
 
 ## 📅 Usage
@@ -44,7 +44,7 @@ You can use Toast UI Calendar for Vue as moudule format or namespace. Also you c
 * Using Ecmascript module
 
    ```js
-   import { VueCalendar } from 'vue-tuicalendar';
+   import { VueCalendar } from '@chantouchsek/vue-calendar';
    import 'tui-calendar/dist/tui-calendar.css';
 
    // If you use the default popups, use this.
@@ -61,7 +61,7 @@ You can use Toast UI Calendar for Vue as moudule format or namespace. Also you c
    require('tui-date-picker/dist/tui-date-picker.css');
    require('tui-time-picker/dist/tui-time-picker.css');
 
-   var tuicalendar = require('vue-tuicalendar');
+   var tuicalendar = require('@chantouchsek/vue-calendar');
    var VueCalendar = tuicalendar.VueCalendar;
    ```
 
@@ -69,7 +69,7 @@ You can use Toast UI Calendar for Vue as moudule format or namespace. Also you c
 
    ```js
    import 'tui-calendar/dist/tui-calendar.css'
-   import VueCalendar from 'vue-tuicalendar/src/VueCalendar.vue'
+   import VueCalendar from '@chantouchsek/vue-calendar/src/VueCalendar.vue'
 
    // If you use the default popups, use this.
    import 'tui-date-picker/dist/tui-date-picker.css';
@@ -89,7 +89,7 @@ You can use Toast UI Calendar for Vue as moudule format or namespace. Also you c
 
     ```js
     import 'tui-calendar/dist/tui-calendar.css'
-    import { VueCalendar } from 'vue-tuicalendar'
+    import { VueCalendar } from '@chantouchsek/vue-calendar'
 
     export default {
         name: 'YourComponent',
@@ -101,7 +101,7 @@ You can use Toast UI Calendar for Vue as moudule format or namespace. Also you c
     or
     ```js
     import 'tui-calendar/dist/tui-calendar.css'
-    import { VueCalendar } from 'vue-tuicalendar'
+    import { VueCalendar } from '@chantouchsek/vue-calendar'
 
     new Vue({
         el: '#app',
@@ -163,7 +163,7 @@ We provide props for [Options of Toast UI Calendar](https://nhn.github.io/tui.ca
 </template>
 <script>
 import 'tui-calendar/dist/tui-calendar.css'
-import { VueCalendar } from 'vue-tuicalendar';
+import { VueCalendar } from '@chantouchsek/vue-calendar';
 
 export default {
     name: 'myCalendar',
@@ -277,7 +277,7 @@ For more information such as the parameters of each event, see [Event of Toast U
 </template>
 <script>
 import 'tui-calendar/dist/tui-calendar.css'
-import { VueCalendar } from 'vue-tuicalendar';
+import { VueCalendar } from '@chantouchsek/vue-calendar';
 
 export default {
     name: 'myCalendar',
