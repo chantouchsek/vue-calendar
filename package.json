@@ -1,0 +1,50 @@
+{
+  "name": "vue-tuicalendar",
+  "version": "0.0.1",
+  "description": "TOAST UI Calendar for Vue",
+  "main": "dist/vue-calendar.js",
+  "types": "index.d.ts",
+  "files": [
+    "dist",
+    "src",
+    "index.d.ts"
+  ],
+  "scripts": {
+    "lint": "eslint src/**",
+    "build": "webpack --mode production",
+    "build:dev": "webpack --mode development",
+    "serve": "vue serve ./example/App.vue"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chantouchsek/vue-tuicalendar.git"
+  },
+  "homepage": "https://github.com/chantouchsek/vue-tuicalendar",
+  "bugs": "https://github.com/chantouchsek/vue-tuicalendar/issues",
+  "author": "NHN. FE Development Lab <dl_javascript@nhn.com>",
+  "license": "MIT",
+  "browserslist": "last 2 versions, ie 9",
+  "peerDependencies": {
+    "vue": "^2.6.12"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.13.15",
+    "@babel/preset-env": "^7.13.15",
+    "@vue/cli": "^4.5.12",
+    "@vue/cli-service-global": "^4.5.12",
+    "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.2.2",
+    "core-js": "^3.10.1",
+    "eslint": "^7.24.0",
+    "eslint-config-tui": "^4.1.0",
+    "eslint-loader": "^4.0.2",
+    "eslint-plugin-vue": "^7.9.0",
+    "vue-loader": "^15.9.6",
+    "vue-template-compiler": "^2.6.12",
+    "webpack": "^4.46.0",
+    "webpack-cli": "^4.6.0"
+  },
+  "dependencies": {
+    "tui-calendar": "^1.13.0"
+  }
+}
