@@ -147,6 +147,8 @@ schedules using `schedules` of prop.
 
 | Name | Type | Default | Reactive | Description |
 | --- | --- | --- | --- | --- |
+| tag | String | div | O | Tag of render element. |
+| height | String | 800 | O | Set height of calendar. |
 | schedules | Array | [] | O | Schedule list of calendar. If this prop is changed, Calendar is rendering. |
 | calendars | Array | [] | O | Type list of calendars |
 | view | String | 'week' | O | View of calendar. There are three views, `day`, `week` and `month`. |
@@ -169,21 +171,22 @@ schedules using `schedules` of prop.
 ```vue
 
 <template>
-  <calendar style="height: 800px;"
-            :calendars="calendarList"
-            :schedules="scheduleList"
-            :view="view"
-            :taskView="taskView"
-            :scheduleView="scheduleView"
-            :theme="theme"
-            :week="week"
-            :month="month"
-            :timezones="timezones"
-            :disableDblClick="disableDblClick"
-            :isReadOnly="isReadOnly"
-            :template="template"
-            :useCreationPopup="useCreationPopup"
-            :useDetailPopup="useDetailPopup"
+  <calendar
+      height="800"
+      :calendars="calendarList"
+      :schedules="scheduleList"
+      :view="view"
+      :taskView="taskView"
+      :scheduleView="scheduleView"
+      :theme="theme"
+      :week="week"
+      :month="month"
+      :timezones="timezones"
+      :disableDblClick="disableDblClick"
+      :isReadOnly="isReadOnly"
+      :template="template"
+      :useCreationPopup="useCreationPopup"
+      :useDetailPopup="useDetailPopup"
   />
 </template>
 <script>
@@ -293,14 +296,15 @@ see [Event of Toast UI Calendar](https://nhn.github.io/tui.calendar/latest/Calen
 ```vue
 
 <template>
-  <calendar style="height: 800px;"
-            @afterRenderSchedule="onAfterRenderSchedule"
-            @beforeCreateSchedule="onBeforeCreateSchedule"
-            @beforeDeleteSchedule="onBeforeDeleteSchedule"
-            @beforeUpdateSchedule="onBeforeUpdateSchedule"
-            @clickDayname="onClickDayname"
-            @clickSchedule="onClickSchedule"
-            @clickTimezonesCollapseBtn="onClickTimezonesCollapseBtn"
+  <calendar
+      height="800"
+      @afterRenderSchedule="onAfterRenderSchedule"
+      @beforeCreateSchedule="onBeforeCreateSchedule"
+      @beforeDeleteSchedule="onBeforeDeleteSchedule"
+      @beforeUpdateSchedule="onBeforeUpdateSchedule"
+      @clickDayname="onClickDayname"
+      @clickSchedule="onClickSchedule"
+      @clickTimezonesCollapseBtn="onClickTimezonesCollapseBtn"
   />
 </template>
 <script>
@@ -345,17 +349,17 @@ For use method, first you need to assign `ref` attribute of element like this:
 
 ```html
 
-<calendar ref="tuiCalendar"/>
+<calendar ref="calendar"/>
 ```
 
-After then you can use methods through `this.$refs`. We provide `getRootElement` and `invoke` methods.
+After then, you can use methods through `this.$refs`. We provide `getRootElement` and `invoke` methods.
 
 * `getRootElement`
 
   You can get root element of calendar using this method.
 
     ```js
-    this.$refs.tuiCalendar.getRootElement();
+    this.$refs.calendar.getRootElement();
     ```
 
 * `invoke`
@@ -365,7 +369,7 @@ After then you can use methods through `this.$refs`. We provide `getRootElement`
   kind of methods are available, see [method of Toast UI Calendar](https://nhn.github.io/tui.calendar/latest/).
 
     ```js
-    this.$refs.tuiCalendar.invoke('today');
+    this.$refs.calendar.invoke('today');
     ```
 
 ## 🔧 Pull Request Steps
