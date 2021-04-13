@@ -2,6 +2,10 @@
 import Calendar from 'tui-calendar';
 
 const scheduleNeedProp = ['start', 'category'];
+const kebabCase = string => string
+  .replace(/([a-z])([A-Z])/g, '$1-$2')
+  .replace(/\s+/g, '-')
+  .toLowerCase();
 
 export default {
   name: 'VueCalendar',
@@ -107,56 +111,56 @@ export default {
   },
   watch: {
     calendars(newValue) {
-      this.calendarInstance.setCalendars(newValue);
+      this.calendar.setCalendars(newValue);
     },
     events() {
-      this.calendarInstance.clear();
+      this.calendar.clear();
       this.reflectSchedules();
     },
     view(newValue) {
-      this.calendarInstance.changeView(newValue, true);
+      this.calendar.changeView(newValue, true);
     },
     taskView(taskView) {
-      this.calendarInstance.setOptions({taskView});
+      this.calendar.setOptions({taskView});
     },
     scheduleView(scheduleView) {
-      this.calendarInstance.setOptions({scheduleView});
+      this.calendar.setOptions({scheduleView});
     },
     theme: {
       handler(newValue) {
-        this.calendarInstance.setTheme(this.cloneData(newValue));
+        this.calendar.setTheme(this.cloneData(newValue));
       },
       deep: true
     },
     week: {
       handler(newValue) {
         const silent = this.view !== 'week' && this.view !== 'day';
-        this.calendarInstance.setOptions({week: this.cloneData(newValue)}, silent);
+        this.calendar.setOptions({week: this.cloneData(newValue)}, silent);
       },
       deep: true
     },
     month: {
       handler(newValue) {
         const silent = this.view !== 'month';
-        this.calendarInstance.setOptions({month: this.cloneData(newValue)}, silent);
+        this.calendar.setOptions({month: this.cloneData(newValue)}, silent);
       },
       deep: true
     },
     timezones(timezones) {
-      this.calendarInstance.setOptions({timezones});
+      this.calendar.setOptions({timezones});
     },
     disableDblClick(disableDblClick) {
-      this.calendarInstance.setOptions({disableDblClick});
+      this.calendar.setOptions({disableDblClick});
     },
     disableClick(disableClick) {
-      this.calendarInstance.setOptions({disableClick});
+      this.calendar.setOptions({disableClick});
     },
     isReadOnly(isReadOnly) {
-      this.calendarInstance.setOptions({isReadOnly});
+      this.calendar.setOptions({isReadOnly});
     }
   },
   mounted() {
-    this.calendarInstance = new Calendar(this.$el, {
+    this.calendar = new Calendar(this.$el, {
       defaultView: this.view,
       taskView: this.taskView,
       scheduleView: this.scheduleView,
@@ -177,16 +181,17 @@ export default {
     this.reflectSchedules();
   },
   beforeDestroy() {
-    this.calendarInstance.off();
-    this.calendarInstance.destroy();
+    this.calendar.off();
+    this.calendar.destroy();
   },
   methods: {
     cloneData(data) {
       return JSON.parse(JSON.stringify(data));
     },
     addEventListeners() {
-      for (const eventName of Object.keys(this.$listeners)) {
-        this.calendarInstance.on(eventName, (...args) => this.$emit(eventName, ...args));
+      for (const event of Object.keys(this.$listeners)) {
+        this.calendar.on(event, (...args) => this.$emit(event, ...args));
+        this.calendar.on(kebabCase(event), (...args) => this.$emit(event, ...args));
       }
     },
     reflectSchedules() {
@@ -200,8 +205,8 @@ export default {
     invoke(methodName, ...args) {
       let result;
 
-      if (this.calendarInstance[methodName]) {
-        result = this.calendarInstance[methodName](...args);
+      if (this.calendar[methodName]) {
+        result = this.calendar[methodName](...args);
       }
 
       return result;
