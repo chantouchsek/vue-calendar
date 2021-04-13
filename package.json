@@ -1,6 +1,6 @@
 {
   "name": "@chantouchsek/vue-calendar",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "TOAST UI Calendar for Vue",
   "main": "dist/vue-calendar.js",
   "types": "index.d.ts",
