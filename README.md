@@ -136,7 +136,7 @@ Vue). When using module format and SFC, you should load `tui-calendar.css` in th
 * Insert `<calendar>` in the template or html. `<calendar>` element should have own height.
 
     ```html
-    <calendar style="height: 800px;"/>
+    <calendar height="800" />
     ```
 
 ### Props
