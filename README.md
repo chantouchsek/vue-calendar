@@ -149,7 +149,7 @@ schedules using `schedules` of prop.
 | --- | --- | --- | --- | --- |
 | tag | String | div | O | Tag of render element. |
 | height | String | 800 | O | Set height of calendar. |
-| schedules | Array | [] | O | Schedule list of calendar. If this prop is changed, Calendar is rendering. |
+| events | Array | [] | O | Schedule list of calendar. If this prop is changed, Calendar is rendering. |
 | calendars | Array | [] | O | Type list of calendars |
 | view | String | 'week' | O | View of calendar. There are three views, `day`, `week` and `month`. |
 | taskView | Boolean, Array | true | O | Show the milestone and task in weekly, daily view. If set `true`, the milestone and task show. If you want to show only the milestone or task, set array like this: `['mileston']` or `['task']`. |
