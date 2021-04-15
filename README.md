@@ -3,10 +3,10 @@
 > This is Vue component wrapping [TOAST UI Calendar](https://github.com/nhn/tui.calendar).
 
 [![vue2](https://img.shields.io/badge/vue-2.x-brightgreen.svg)](https://vuejs.org/)
-[![github version](https://img.shields.io/github/release/chantouchsek/vue-tuicalendar.svg)](https://github.com/chantouchsek/vue-tuicalendar/releases/latest)
+[![github version](https://img.shields.io/github/release/chantouchsek/vue-calendar.svg)](https://github.com/chantouchsek/vue-calendar/releases/latest)
 [![npm version](https://img.shields.io/npm/v/@chantouchsek/vue-calendar.svg)](https://www.npmjs.com/package/@chantouchsek/vue-calendar)
-[![license](https://img.shields.io/github/license/chantouchsek/vue-tuicalendar.svg)](https://github.com/chantouchsek/vue-tuicalendar/blob/main/LICENSE)
-[![PRs welcome](https://img.shields.io/badge/PRs-welcome-ff69b4.svg)](https://github.com/chantouchsek/vue-tuicalendar/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22)
+[![license](https://img.shields.io/github/license/chantouchsek/vue-calendar.svg)](https://github.com/chantouchsek/vue-calendar/blob/main/LICENSE)
+[![PRs welcome](https://img.shields.io/badge/PRs-welcome-ff69b4.svg)](https://github.com/chantouchsek/vue-calendar/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22)
 
 ## 🚩 Table of Contents
 
@@ -400,9 +400,9 @@ For more information on PR's step, please see links of Contributing section.
 
 ## 💬 Contributing
 
-* [Code of Conduct](https://github.com/chantouchsek/vue-tuicalendar/blob/main/CODE_OF_CONDUCT.md)
-* [Contributing guideline](https://github.com/chantouchsek/vue-tuicalendar/blob/main/CONTRIBUTING.md)
-* [Commit convention](https://github.com/chantouchsek/vue-tuicalendar/blob/main/docs/COMMIT_MESSAGE_CONVENTION.md)
+* [Code of Conduct](https://github.com/chantouchsek/vue-calendar/blob/main/CODE_OF_CONDUCT.md)
+* [Contributing guideline](https://github.com/chantouchsek/vue-calendar/blob/main/CONTRIBUTING.md)
+* [Commit convention](https://github.com/chantouchsek/vue-calendar/blob/main/docs/COMMIT_MESSAGE_CONVENTION.md)
 
 ## 📜 License
 
