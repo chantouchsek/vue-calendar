@@ -1,6 +1,6 @@
 {
   "name": "@chantouchsek/vue-calendar",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "TOAST UI Calendar for Vue",
   "main": "dist/vue-calendar.js",
   "types": "index.d.ts",
@@ -8,6 +8,17 @@
     "dist",
     "src",
     "index.d.ts"
+  ],
+  "keywords": [
+    "vue-calendar",
+    "tui-calendar",
+    "vue-tui-calendar",
+    "vue-tuicalenar",
+    "calendar",
+    "event-calendar",
+    "vue-event-calendar",
+    "vue-event-schedule",
+    "vue-event-list"
   ],
   "scripts": {
     "lint": "eslint src/**",
